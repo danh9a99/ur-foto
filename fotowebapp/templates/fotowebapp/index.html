@@ -8,7 +8,7 @@
 	<meta name="keywords" content="endGam,gGaming, magazine, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="static/fotowebapp/image/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="static/fotowebapp/animate.css"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="static/fotowebapp/style.css"/>
+	<link rel="stylesheet" href="{% static 'fotowebapp/style.css' %}"/>
 
 
 	<!--[if lt IE 9]>
@@ -59,8 +59,8 @@
 				</a>
 				<img src="static/fotowebapp/image/menu-icon.png" alt="" class="menu-icon">
 				<ul class="main-menu">
-					<li><a href="./index.html">Home</a></li>
-					<li class="active"><a href="./gallery.html">Gallery</a></li>
+					<li class="active"><a href="./home.html">Home</a></li>
+					<li><a href="./gallery.html">Gallery</a></li>
 					<li><a href="./gallery-single.html">Single gallery</a></li>
 					<li><a href="./blog.html">Blog</a></li>
 					<li><a href="./contact.html">Contact</a></li>
@@ -81,53 +81,32 @@
 		<!-- header section end -->
 
 		<!-- Page section -->
-		<div class="page-section gallery-page">
-			<ul class="portfolio-filter">
-				<li class="filter all active" data-filter="*">All</li>
-				<li class="filter" data-filter=".photo">Photography</li>
-				<li class="filter" data-filter=".nature">Nature</li>
-				<li class="filter" data-filter=".love">Love</li>
-				<li class="filter" data-filter=".animals">Animals</li>
-			</ul>
-			<div class="portfolio-gallery">
-				<div class="gallery-item animals">
-					<img src="static/fotowebapp/image/gallery/1.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
+		<div class="page-section home-page">
+			<div class="hero-slider owl-carousel">
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="static/fotowebapp/image/slider-bg-1.jpg" data-hash="slide-1">
+					<div class="si-text-box">
+						<span>Photography</span>
+						<h2>Project No. 1</h2>
+						<p>Ut pellentesque auctor lorem, at maximus lacus faucibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris auctor nunc non nulla euismod consequat. Pellentesque non mattis nulla. Fusce quis tempor risus, non elemen tum dui. Curabitur et mattis ex, a ultrices.</p>
+						<a href="" class="site-btn">Read More</a>
+					</div>
+					<div class="next-slide-show set-bg" data-setbg="static/fotowebapp/image/slider-bg-2.jpg">
+						<a href="#slide-2" class="ns-btn">Next</a>
 					</div>
 				</div>
-				<div class="gallery-item nature">
-					<img src="static/fotowebapp/image/gallery/2.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
+				<div class="slider-item d-flex align-items-center set-bg" data-setbg="static/fotowebapp/image/slider-bg-2.jpg"  data-hash="slide-2">
+					<div class="si-text-box">
+						<span>Photography</span>
+						<h2>Project No. 2</h2>
+						<p>Ut pellentesque auctor lorem, at maximus lacus faucibus nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris auctor nunc non nulla euismod consequat. Pellentesque non mattis nulla. Fusce quis tempor risus, non elemen tum dui. Curabitur et mattis ex, a ultrices.</p>
+						<a href="" class="site-btn">Read More</a>
 					</div>
-				</div>
-				<div class="gallery-item love">
-					<img src="static/fotowebapp/image/gallery/3.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
-					</div>
-				</div>
-				<div class="gallery-item photo">
-					<img src="static/fotowebapp/image/gallery/5.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
-					</div>
-				</div>
-				<div class="gallery-item nature">
-					<img src="static/fotowebapp/image/gallery/6.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
-					</div>
-				</div>
-				<div class="gallery-item photo">
-					<img src="static/fotowebapp/image/gallery/4.jpg" alt="">
-					<div class="hover-links">
-						<a href="" class="site-btn sb-light">Next</a>
+					<div class="next-slide-show set-bg" data-setbg="static/fotowebapp/image/slider-bg-1.jpg">
+						<a href="#slide-1" class="ns-btn">Next</a>
 					</div>
 				</div>
 			</div>
-
+			<div id="snh-1"></div>
 		</div>
 		<!-- Page section end-->
 	</div>
